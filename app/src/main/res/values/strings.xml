@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dr. Fit</string>
+    <string name="title_home">BMI</string>
+    <string name="title_dashboard">Diet</string>
+    <string name="title_notifications">FAQ</string>
+    <string name="title_caloriecounter">Calorie counter</string>
+</resources>
