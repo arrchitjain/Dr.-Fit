@@ -7,236 +7,278 @@
     tools:context=".ui.caloriecounter.CaloriecounterFragment">
 
 
-    <RelativeLayout
-        android:id="@+id/caltoplayout"
-        android:layout_width="match_parent"
-        android:layout_height="160dp"
-        android:background="#2196F3"
-        >
-
         <TextView
             android:id="@+id/calhead"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="45dp"
             android:textAlignment="center"
             android:text="Calorie Counter"
             android:textSize="40dp"
-            android:textColor="#2196F3"
-            android:background="@drawable/headstyle"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttonstyle"
             />
+
+    <RelativeLayout
+        android:id="@+id/calmidrellayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:background="#2196F3"
+        >
 
     </RelativeLayout>
 
-
-
-
-
     <androidx.cardview.widget.CardView
-        android:id="@+id/calwtcrdview"
-        android:layout_marginTop="130dp"
-        android:layout_marginLeft="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="5dp"
+        android:id="@+id/calinputcrdview"
+        android:layout_width="360dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="15dp"
+        app:cardCornerRadius="15dp"
         app:cardElevation="6dp"
         >
+
+        <TextView
+            android:id="@+id/calwttxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight : "
+            android:textSize="20dp"
+            android:textColor="#2196F3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            />
+
+
+        <TextView
+            android:id="@+id/caltimetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time : "
+            android:textSize="20dp"
+            android:textColor="#2196F3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            />
+
 
         <EditText
             android:id="@+id/calwt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="phone"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="5dp"
-            android:textAlignment="center"
             android:hint="65 (in Kgs)"
+            android:textSize="20dp"
             android:textColor="#2196F3"
-            />
+            android:inputType="phone"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
 
-    </androidx.cardview.widget.CardView>
-
-
-    <Button
-        android:id="@+id/calreset"
-        android:layout_below="@id/calhead"
-        android:layout_marginTop="135dp"
-        android:layout_marginLeft="150dp"
-        android:background="@drawable/headstyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:text="Reset"
-        android:textColor="#2196F3"
-        />
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/caltimecrdview"
-        android:layout_marginTop="130dp"
-        android:layout_marginLeft="260dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="5dp"
-        app:cardElevation="6dp"
-        >
 
         <EditText
             android:id="@+id/caltime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="phone"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="5dp"
-            android:textAlignment="center"
-            android:hint="30 (in min)"
+            android:hint="30 (in Min)"
+            android:textSize="20dp"
             android:textColor="#2196F3"
+            android:inputType="phone"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="50dp"
+            android:textAlignment="center"
             />
 
-    </androidx.cardview.widget.CardView>
-
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/calinfocrdview"
-        android:layout_marginTop="210dp"
-        android:layout_marginLeft="15dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:cardBackgroundColor="#2196F3"
-        app:cardCornerRadius="5dp"
-        app:cardElevation="6dp"
-        >
+        <Button
+            android:id="@+id/calreset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:textSize="20dp"
+            android:background="@drawable/buttonstyle"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="30dp"
+            />
 
         <TextView
             android:id="@+id/calinfo"
+            android:padding="6dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="5dp"
-            android:text="Select the Exercise below to know your burnt calories"
             android:textAlignment="center"
-            android:textSize="15dp"
-            android:textColor="#FFFFFF"
+            android:layout_marginTop="110dp"
+            android:text="Input your 'weight' and 'exercise time' and then select the respective exercise given below"
+            android:textSize="20dp"
             />
 
     </androidx.cardview.widget.CardView>
 
-
     <androidx.cardview.widget.CardView
-        android:id="@+id/calresultcrdview"
-        android:layout_below="@id/calinfocrdview"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="25dp"
-        android:layout_width="340dp"
-        android:layout_height="wrap_content"
-        app:cardBackgroundColor="#2196F3"
-        app:cardCornerRadius="5dp"
+        android:id="@+id/calexercisecrdview"
+        android:layout_width="360dp"
+        android:layout_height="370dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="320dp"
+        android:paddingBottom="30dp"
+        app:cardCornerRadius="15dp"
         app:cardElevation="6dp"
         >
 
         <TextView
-            android:id="@+id/calresult"
+            android:id="@+id/calexercisehead"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="5dp"
-            android:layout_gravity="center"
-            android:textAlignment="center"
-            android:hint="You have burnt ... Calories"
-            android:textColor="#FFFFFF"
-            android:textSize="25dp"
+            android:text="EXERCISES"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#2196F3"
+            android:textStyle="bold"
             />
 
-    </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/calexerxizecrdview"
-        android:layout_below="@id/calresultcrdview"
-        android:layout_width="380dp"
-        android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:paddingTop="16dp"
-        app:cardCornerRadius="25dp"
-        app:cardElevation="6dp"
-        >
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scrollbars="vertical"
-            android:background="#2196F3"
+        <HorizontalScrollView
+            android:id="@+id/calhorsrlviewbuttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             >
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/calrellayoutbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:padding="10dp"
+            >
+
+            <ImageButton
+                android:id="@+id/calcycling"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/ringshape"
+                android:src="@drawable/ic_directions_bike_black_24dp"
+                />
+            <ImageButton
+                android:id="@+id/calwalking"
+                android:layout_toRightOf="@id/calcycling"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/ringshape"
+                android:src="@drawable/ic_directions_walk_black_24dp"
+                />
 
 
-        <ImageButton
-            android:id="@+id/calcycling"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_below="@id/calresultcrdview"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="40dp"
-            android:src="@drawable/ic_whatshot_black_24dp"
-            />
+            <ImageButton
+                android:id="@+id/calaerobics"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_toRightOf="@id/calwalking"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/ringshape"
+                android:src="@drawable/aerobicsicon"
+                />
+            <ImageButton
+                android:id="@+id/calhouseholdactivities"
+                android:layout_toRightOf="@id/calaerobics"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/ringshape"
+                android:src="@drawable/householdactivitiesicon"
+                />
 
 
-        <ImageButton
-            android:id="@+id/calwalking"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_below="@id/calresultcrdview"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="195dp"
-            android:src="@drawable/ic_whatshot_black_24dp"
-            />
-
-        <ImageButton
-            android:id="@+id/calswimming"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_below="@id/calcycling"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="40dp"
-            android:src="@drawable/ic_whatshot_black_24dp"
-            />
 
 
-        <ImageButton
-            android:id="@+id/caljogging"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_below="@id/calcycling"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="195dp"
-            android:src="@drawable/ic_whatshot_black_24dp"
-            />
+            <ImageButton
+                android:id="@+id/calswimming"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/calcycling"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/ringshape"
+                android:src="@drawable/ic_pool_black_24dp"
+                />
 
 
-            </RelativeLayout>
+            <ImageButton
+                android:id="@+id/calrunning"
+                android:layout_toRightOf="@id/calswimming"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="105dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/ringshape"
+                android:src="@drawable/ic_directions_run_black_24dp"
+                />
 
-</ScrollView>
+            <ImageButton
+                android:id="@+id/calskipping"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_toRightOf="@id/calrunning"
+                android:layout_marginTop="105dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/ringshape"
+                android:src="@drawable/skippingicon"
+                />
 
+
+            <ImageButton
+                android:id="@+id/calyoga"
+                android:layout_toRightOf="@id/calskipping"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="105dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/ringshape"
+                android:src="@drawable/yogaicon"
+                />
+
+
+        </RelativeLayout>
+
+
+        </HorizontalScrollView>
+
+
+                <TextView
+                    android:id="@+id/calresult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="280dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:hint="You have burnt ... Calories"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"
+                    android:background="@drawable/buttonstyle"
+                    />
 
 
     </androidx.cardview.widget.CardView>
+
+
+
+
+
 
 
 
 
 
 </RelativeLayout>
+
+
+

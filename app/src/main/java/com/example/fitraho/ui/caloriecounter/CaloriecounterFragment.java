@@ -1,12 +1,14 @@
 package com.example.fitraho.ui.caloriecounter;
 
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -40,12 +42,14 @@ public class CaloriecounterFragment extends Fragment {
         final EditText Time = (EditText) root.findViewById(R.id.caltime);
         final ImageButton Cycling = (ImageButton) root.findViewById(R.id.calcycling);
         final ImageButton Walking = (ImageButton) root.findViewById(R.id.calwalking);
-        final ImageButton Jogging = (ImageButton) root.findViewById(R.id.caljogging);
+        final ImageButton Running = (ImageButton) root.findViewById(R.id.calrunning);
         final ImageButton Swimming = (ImageButton) root.findViewById(R.id.calswimming);
+        final ImageButton Aerobics = (ImageButton) root.findViewById(R.id.calaerobics);
+        final ImageButton Householdactivities = (ImageButton) root.findViewById(R.id.calhouseholdactivities);
+        final ImageButton Skipping = (ImageButton) root.findViewById(R.id.calskipping);
+        final ImageButton Yoga = (ImageButton) root.findViewById(R.id.calyoga);
         final Button Reset = (Button) root.findViewById(R.id.calreset);
         final TextView Result = (TextView) root.findViewById(R.id.calresult);
-
-
 
             Reset.setOnClickListener(new View.OnClickListener() {
         @Override
@@ -56,36 +60,7 @@ public class CaloriecounterFragment extends Fragment {
         }
     });
 
-
         Cycling.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-z
-            }
-        });
-
-        Walking.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String w = Weight.getText().toString();
-                String t = Time.getText().toString();
-                if(w.isEmpty() || t.isEmpty()){
-                    Result.setText("Please Enter Attributes.");
-                }
-                else{
-                    float r1 = Float.parseFloat(w);
-                    float r2 = Float.parseFloat(t);
-                    float met = (float) 2.3;
-                    float ans = r1 * r2 / 60 * met;
-                    String cal = String.format("%.2f", ans);
-
-                    Result.setText("You have burnt " + cal + " Calories");
-                }
-
-            }
-        });
-
-        Jogging.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String w = Weight.getText().toString();
@@ -100,7 +75,49 @@ z
                     float ans = r1 * r2 / 60 * met;
                     String cal = String.format("%.2f", ans);
 
-                    Result.setText("You have burnt " + cal + " Calories");
+                    Result.setText(cal + " Calories burnt");
+                }
+
+            }
+        });
+
+        Walking.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String w = Weight.getText().toString();
+                String t = Time.getText().toString();
+                if(w.isEmpty() || t.isEmpty()){
+                    Result.setText("Please Enter Attributes.");
+                }
+                else{
+                    float r1 = Float.parseFloat(w);
+                    float r2 = Float.parseFloat(t);
+                    float met = (float) 2.9;
+                    float ans = r1 * r2 / 60 * met;
+                    String cal = String.format("%.2f", ans);
+
+                    Result.setText(cal + " Calories burnt");
+                }
+
+            }
+        });
+
+        Running.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String w = Weight.getText().toString();
+                String t = Time.getText().toString();
+                if(w.isEmpty() || t.isEmpty()){
+                    Result.setText("Please Enter Attributes.");
+                }
+                else{
+                    float r1 = Float.parseFloat(w);
+                    float r2 = Float.parseFloat(t);
+                    float met = (float) 9.8;
+                    float ans = r1 * r2 / 60 * met;
+                    String cal = String.format("%.2f", ans);
+
+                    Result.setText(cal + " Calories burnt");
                 }
             }
         });
@@ -120,14 +137,95 @@ z
                     float ans = r1 * r2 / 60 * met;
                     String cal = String.format("%.2f", ans);
 
-                    Result.setText("You have burnt " + cal + " Calories");
+                    Result.setText(cal + " Calories burnt");
                 }
 
             }
         });
 
+        Aerobics.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String w = Weight.getText().toString();
+                String t = Time.getText().toString();
+                if(w.isEmpty() || t.isEmpty()){
+                    Result.setText("Please Enter Attributes.");
+                }
+                else{
+                    float r1 = Float.parseFloat(w);
+                    float r2 = Float.parseFloat(t);
+                    float met = (float) 7.3;
+                    float ans = r1 * r2 / 60 * met;
+                    String cal = String.format("%.2f", ans);
 
+                    Result.setText(cal + " Calories burnt");
+                }
 
+            }
+        });
+
+        Householdactivities.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String w = Weight.getText().toString();
+                String t = Time.getText().toString();
+                if(w.isEmpty() || t.isEmpty()){
+                    Result.setText("Please Enter Attributes.");
+                }
+                else{
+                    float r1 = Float.parseFloat(w);
+                    float r2 = Float.parseFloat(t);
+                    float met = (float) 3.5;
+                    float ans = r1 * r2 / 60 * met;
+                    String cal = String.format("%.2f", ans);
+
+                    Result.setText(cal + " Calories burnt");
+                }
+
+            }
+        });
+
+        Skipping.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String w = Weight.getText().toString();
+                String t = Time.getText().toString();
+                if(w.isEmpty() || t.isEmpty()){
+                    Result.setText("Please Enter Attributes.");
+                }
+                else{
+                    float r1 = Float.parseFloat(w);
+                    float r2 = Float.parseFloat(t);
+                    float met = (float) 12.3;
+                    float ans = r1 * r2 / 60 * met;
+                    String cal = String.format("%.2f", ans);
+
+                    Result.setText(cal + " Calories burnt");
+                }
+
+            }
+        });
+
+        Yoga.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String w = Weight.getText().toString();
+                String t = Time.getText().toString();
+                if(w.isEmpty() || t.isEmpty()){
+                    Result.setText("Please Enter Attributes.");
+                }
+                else{
+                    float r1 = Float.parseFloat(w);
+                    float r2 = Float.parseFloat(t);
+                    float met = (float) 3.3;
+                    float ans = r1 * r2 / 60 * met;
+                    String cal = String.format("%.2f", ans);
+
+                    Result.setText(cal + " Calories burnt");
+                }
+
+            }
+        });
 
 
 

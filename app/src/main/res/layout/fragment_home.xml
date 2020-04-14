@@ -11,7 +11,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:background="@drawable/appbackgrngclr"
+        android:background="#2196F3"
         >
 
         <TextView
@@ -127,6 +127,5 @@
             />
 
     </androidx.cardview.widget.CardView>
-
 
 </RelativeLayout>

@@ -20,8 +20,6 @@ public class HomeFragment extends Fragment {
     private HomeViewModel homeViewModel;
     EditText weight;
     EditText height;
-    double weightd;
-    double heightd;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
