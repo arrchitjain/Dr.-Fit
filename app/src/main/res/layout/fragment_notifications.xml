@@ -41,7 +41,8 @@
         app:cardElevation="6dp"
         >
 
-        <RelativeLayout
+        <ScrollView
+            android:id="@+id/faqscrview"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -53,12 +54,13 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
+                android:paddingBottom="70dp"
                 android:textSize="20dp"
                 android:textColor="#0E2E2B"
                 android:text="@string/faqtextview"
                 />
 
-        </RelativeLayout>
+        </ScrollView>
 
 
     </androidx.cardview.widget.CardView>

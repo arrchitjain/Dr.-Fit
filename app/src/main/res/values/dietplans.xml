@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dietplan1"><title><b>DAILY DIET PLAN</b></title>\n
+        \n<b>A. Breakfast :</b>
+\ni. Non-vegetarian : 3 egg white and 1 yolk omelet with veggies, plain yoghurt and 1/2 a fruit.
+\nii. Vegetarian : Sweet potato, pancakes, muesli with oats, yoghurt, dates and berries.
+        \n<b>B. Lunch :</b>
+\ni. Non-vegetarian : Chicken breast, quinoa, mixed veggies, mainly carbohydrates and proteins type of food.
+\nii. Vegetarian : Cucumber, pea and lettuce soup, salads, beetroots and broccolis.
+        \n<b>C. Dinner :</b>
+\ni. Non-vegetarian : Salmon and mixed veggies, different types of vegetables, mainly fats and proteins type of food.
+\nii. Vegetarian : Guacamole and mango salad with black beans, spinach and fenugreek dishes, cheese and sweet potato curry.
+    </string>
+    <string name="dietplan2"><title><b>7 DAYS DIET PLAN</b></title>\n
+        \n<b>A. Day 1 – Fruits : People can eat a range of fruits, especially melons and citrus fruits, but should avoid bananas.</b>
+\ni. breakfast: 1 medium apple or 1 bowl of mixed berries
+\nii. snack: 1 bowl of cantaloupe or an orange
+\niii. lunch: 1 bowl of watermelon
+\niv. snack: 1 orange
+\nv. dinner: 1 pear or 1 bowl of kiwi
+\nvi. snack: 1 bowl of mixed berries
+        \n\n<b>B. Day 2 — Vegetables : Start the day with a sweet potato or baked potato, but limit potato intake to breakfast only. People can eat vegetables raw or cooked.</b>
+\ni. breakfast: 1 sweet potato or 1 baked potato
+\nii. snack: 1 bowl of cabbage
+\niii. lunch: a mixed salad containing lettuce, tomatoes, carrots, and cucumber
+\niv. snack: 1 bowl of steamed or raw broccoli
+\nv. dinner: 1 bowl of kale or arugula with asparagus
+\nvi. snack: 1 bowl of sliced cucumbers
+        \n\n<b>C. Day 3 — Fruit and vegetables : People can eat the same foods as days 1 and 2, avoiding bananas and potatoes.</b>
+\ni. breakfast: 1 apple or 1 bowl of watermelon
+\nii. snack: 1 bowl of cherry tomatoes
+\niii. lunch: a mixed salad
+\niv. snack: 1 bowl of sliced cucumbers
+\nv. dinner: 1 kale salad with carrots and cucumbers and 1 bowl of strawberries on the side
+\nvi. snack: 1 apple
+        \n\n<b>D. Day 4 — Bananas and milk : Eat bananas either whole or in a smoothie with milk and ice. No other fruits or vegetables are allowed, but people can also eat wonder soup.</b>
+\ni. breakfast: 2 bananas and 1 glass of milk
+\nii. snack: 1 smoothie containing banana and skim milk
+        \niii. lunch: 1 bowl of wonder soup
+\niv. snack: 1 smoothie containing banana and skim milk
+\nv. dinner: wonder soup and 1 banana
+        \n\n<b>E. Day 5 — Meat : Eat 20 ounces (oz) of either beef, chicken, or fish. Vegetarians can replace meat with cottage cheese or brown rice.</b>
+\ni. breakfast: 5–6 oz serving of meat and 2 whole tomatoes
+\nii. lunch: 7–8 oz serving of meat with 2 whole tomatoes
+\niii. dinner: 5–6 oz serving of meat with 2 whole tomatoes
+\niv. snacks: wonder soup or freshly pressed tomato juice
+\nv. an additional 4 cups of water
+        \n\n<b>F. Day 6 — Meat and vegetables : Eat 20 oz of meat and unlimited raw or cooked vegetables, excluding potatoes and tomatoes. Vegetarians can have cottage cheese or brown rice in place of meat.</b>
+\ni. breakfast: 5–6 oz serving of meat with 1 bowl of vegetables
+\nii. lunch: 7–8 oz serving of meat with 1 bowl of vegetables
+\niii. dinner: 5–6 oz serving of meat with wonder soup
+\niv. snacks: wonder soup
+        \n\n<b>G. Day 7 — Rice, fruit, and vegetables : Eat fruit, vegetables, and brown rice. The diet plan for this day permits sugar-free juice.</b>
+\ni. breakfast: 1 bowl of brown rice and 1 orange or a bowl of watermelon
+\nii. lunch: 1 bowl of brown rice and 1 glass of sugar-free fruit juice
+\niii. dinner: 1 bowl of brown rice with 1 bowl of raw or cooked vegetables
+        \niv. snacks: berries, citrus fruits, or wonder soup
+    </string>
+    <string name="dietplan3"><title><b>WEIGHT LOSS TIPS</b></title>\n
+\n1. Try Intermittent Fasting
+\n2. Drink Water, Especially Before Meals
+\n3. Eat Eggs For Breakfast
+\n4. Drink Coffee (Preferably Black)
+\n5. Take a Glucomannan Supplement
+\n6. Cut Back on Added Sugar
+\n7. Drink Green Tea
+\n8. Eat Less Refined Carbs
+\n9. Go on a Low-Carb Diet
+\n10. Eat More Fiber
+\n11. Exercise Portion Control or Count Calories
+\n12. Keep Healthy Food Around in Case You Get Hungry
+\n13. Take Probiotic Supplements
+\n14. Eat Spicy Foods
+\n15. Do Aerobic Exercise
+    </string>
+
+
+</resources>

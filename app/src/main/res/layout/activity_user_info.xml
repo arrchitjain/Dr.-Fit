@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_info"
+    android:background="#2196F3"
+    android:paddingRight="16dp">
+
+
+    <TextView
+        android:id="@+id/txinfohead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Profile"
+        android:textSize="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#FFFFFF"
+        />
+
+
+    <ImageView
+        android:id="@+id/userinfoimgview"
+        android:layout_below="@id/txinfohead"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_person_white_24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/ringshape"
+        />
+
+    <TextView
+        android:id="@+id/txname"
+        android:layout_below="@id/userinfoimgview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2196F3"
+        android:textSize="20dp"
+        android:hint="Name :"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:fallbackLineSpacing="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/buttonstyle"
+        android:backgroundTint="#FFFFFF"
+        />
+
+    <TextView
+        android:id="@+id/txemail"
+        android:layout_below="@id/txname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2196F3"
+        android:textSize="20dp"
+        android:hint="Email :"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/buttonstyle"
+        android:fallbackLineSpacing="true"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textAlignment="center"
+        />
+
+</RelativeLayout>

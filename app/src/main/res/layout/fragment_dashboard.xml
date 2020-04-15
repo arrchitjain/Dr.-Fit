@@ -4,16 +4,113 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.dashboard.DashboardFragment">
-
+    tools:context=".ui.dashboard.DashboardFragment"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:background="#2196F3"
+    >
     <TextView
+        android:id="@+id/txdietplanhead"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="This is DIET"
-        android:textSize="40dp"
-        android:textColor="#FFFFFF"
+        android:layout_height="50dp"
+        android:text="Various Diet Plans"
+        android:background="@drawable/buttonstyle"
+        android:backgroundTint="#FFFFFF"
         android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="35dp"
+        android:textColor="#000"
+        android:textStyle="italic"
+
         />
 
+    <ScrollView
+        android:id="@+id/dietscrview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rellayoutscrlviewdietplann"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="70dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dietcrdview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="6dp"
+        >
+
+        <TextView
+            android:id="@+id/txdeitplan1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:textColor="#0E2E2B"
+            android:layout_margin="16dp"
+            android:text="@string/dietplan1"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/dietcrdview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dietcrdview1"
+            android:layout_marginTop="10dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="6dp"
+            >
+
+            <TextView
+                android:id="@+id/txdeitplan2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:textColor="#0E2E2B"
+                android:layout_margin="16dp"
+                android:text="@string/dietplan2"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/dietcrdview3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dietcrdview2"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="120dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="6dp"
+                >
+
+                <TextView
+                    android:id="@+id/txdeitplan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="20dp"
+                    android:textColor="#0E2E2B"
+                    android:layout_margin="16dp"
+                    android:text="@string/dietplan3"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>

@@ -1,5 +1,6 @@
 package com.example.fitraho;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
@@ -10,13 +11,18 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -28,6 +34,8 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     private FirebaseAuth firebaseAuth;
+    private FirebaseUser firebaseUser;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navView, navController);
 
         firebaseAuth = FirebaseAuth.getInstance();
+
 
 
     }
@@ -64,6 +73,59 @@ public class MainActivity extends AppCompatActivity {
                 finish();
                 startActivity(new Intent(MainActivity.this, login.class));
             }
+            case R.id.menuDelAccount:{
+
+                AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
+                dialog.setTitle("Are you sure?");
+                dialog.setMessage("Deleting this account will result in completely removing your account from the system and you won't be able " +
+                        "to access your account on this app again?");
+                dialog.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        final ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressBar2);
+
+                        progressBar.setVisibility(View.VISIBLE);
+                        FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
+                        firebaseUser.delete().addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                progressBar.setVisibility(View.GONE);
+                                if (task.isSuccessful()){
+                                    startActivity(new Intent(MainActivity.this, login.class));
+                                    Toast.makeText(MainActivity.this,"Account deleted", Toast.LENGTH_SHORT);
+
+                                }
+                                else {
+                                    Toast.makeText(MainActivity.this,task.getException().getMessage(), Toast.LENGTH_SHORT);
+                                }
+                            }
+                        });
+
+                    }
+                });
+
+                dialog.setNegativeButton("Dismiss", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        dialog.dismiss();
+
+                    }
+                });
+
+                AlertDialog alertDialog = dialog.create();
+                alertDialog.show();
+                //case delete account
+            }
+
+
+            case R.id.menuUserinfo:{
+                startActivity(new Intent(MainActivity.this, user_info.class));
+            }
+
+
+
         }
 
         return super.onOptionsItemSelected(item);

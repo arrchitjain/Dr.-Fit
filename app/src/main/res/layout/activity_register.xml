@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register"
+    android:gravity="center_horizontal">
+
+
+    <RelativeLayout
+        android:id="@+id/rellayoutregister"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#2196F3"
+        >
+
+
+        <ImageView
+            android:id="@+id/loginimageview"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="130dp"
+            android:src="@drawable/ic_person_white_24dp"
+            />
+
+
+        <TextView
+            android:id="@+id/retxtwelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginimageview"
+            android:text="Hey, never logged in before, then just sign up!"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rellayoutregisterui"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/loginbackgrndui"
+        android:layout_marginTop="250dp">
+
+
+    </RelativeLayout>
+
+
+
+    <EditText
+        android:id="@+id/rename"
+        android:layout_below="@+id/rellayoutregisterui"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint=" Name"
+        android:textColorHint="#2196F3"
+        android:textColor="#2196F3"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/loginbackgrnd"
+        android:inputType="text"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        />
+    <EditText
+        android:id="@+id/reemail"
+        android:layout_below="@id/rename"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint=" Email"
+        android:textColorHint="#2196F3"
+        android:textColor="#2196F3"
+        android:background="@drawable/loginbackgrnd"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/ic_mail_black_24dp"
+        />
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_below="@id/reemail"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint=" Password"
+        android:textColorHint="#2196F3"
+        android:textColor="#2196F3"
+        android:background="@drawable/loginbackgrnd"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:inputType="numberPassword"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        />
+    <Button
+        android:id="@+id/refinish"
+        android:layout_below="@id/repassword"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="@drawable/buttonstyle"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#FFFFFF"
+        />
+
+
+    <TextView
+        android:id="@+id/rebacklogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/refinish"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:textSize="16dp"
+        android:text="Aldready have an account?"
+        />
+
+</RelativeLayout>

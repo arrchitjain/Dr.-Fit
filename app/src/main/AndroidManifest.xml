@@ -9,7 +9,9 @@
         android:roundIcon="@drawable/appmainicon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".register"></activity>
+        <activity android:name=".user_info"
+            android:label="User Profile"></activity>
+        <activity android:name=".register" />
         <activity android:name=".MainActivity" />
         <activity
             android:name=".login"

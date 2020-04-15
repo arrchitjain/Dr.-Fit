@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "943380679154",
+    "firebase_url": "https://drfit-31a95.firebaseio.com",
+    "project_id": "drfit-31a95",
+    "storage_bucket": "drfit-31a95.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943380679154:android:f27894816694fa5057836b",
+        "android_client_info": {
+          "package_name": "com.example.fitraho"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943380679154-ju0bpitt8sera561005m1l8j7kkh484m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD36PvJpnEV90bdHpUABeUoRoP65FThSyw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "943380679154-ju0bpitt8sera561005m1l8j7kkh484m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
