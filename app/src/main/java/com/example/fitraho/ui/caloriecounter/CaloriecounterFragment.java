@@ -1,5 +1,6 @@
 package com.example.fitraho.ui.caloriecounter;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
@@ -50,6 +51,7 @@ public class CaloriecounterFragment extends Fragment {
         final ImageButton Yoga = (ImageButton) root.findViewById(R.id.calyoga);
         final Button Reset = (Button) root.findViewById(R.id.calreset);
         final TextView Result = (TextView) root.findViewById(R.id.calresult);
+        final TextView Resulthead = (TextView) root.findViewById(R.id.calresulthead);
 
             Reset.setOnClickListener(new View.OnClickListener() {
         @Override
@@ -57,6 +59,15 @@ public class CaloriecounterFragment extends Fragment {
             Weight.setText("");
             Time.setText("");
             Result.setText("");
+            Resulthead.setText("");
+            Cycling.setColorFilter(0x000);
+            Walking.setColorFilter(0x000);
+            Swimming.setColorFilter(0x000);
+            Running.setColorFilter(0x000);
+            Aerobics.setColorFilter(0x000);
+            Householdactivities.setColorFilter(0x000);
+            Skipping.setColorFilter(0x000);
+            Yoga.setColorFilter(0x000);
         }
     });
 
@@ -66,7 +77,8 @@ public class CaloriecounterFragment extends Fragment {
                 String w = Weight.getText().toString();
                 String t = Time.getText().toString();
                 if(w.isEmpty() || t.isEmpty()){
-                    Result.setText("Please Enter Attributes.");
+                    Result.setText("Enter Attributes.");
+                    Resulthead.setText("Please");
                 }
                 else{
                     float r1 = Float.parseFloat(w);
@@ -76,6 +88,15 @@ public class CaloriecounterFragment extends Fragment {
                     String cal = String.format("%.2f", ans);
 
                     Result.setText(cal + " Calories burnt");
+                    Resulthead.setText("Cycling :");
+                    Cycling.setColorFilter(0xFF2196F3);
+                    Walking.setColorFilter(0x000);
+                    Swimming.setColorFilter(0x000);
+                    Running.setColorFilter(0x000);
+                    Aerobics.setColorFilter(0x000);
+                    Householdactivities.setColorFilter(0x000);
+                    Skipping.setColorFilter(0x000);
+                    Yoga.setColorFilter(0x000);
                 }
 
             }
@@ -87,7 +108,8 @@ public class CaloriecounterFragment extends Fragment {
                 String w = Weight.getText().toString();
                 String t = Time.getText().toString();
                 if(w.isEmpty() || t.isEmpty()){
-                    Result.setText("Please Enter Attributes.");
+                    Result.setText("Enter Attributes.");
+                    Resulthead.setText("Please");
                 }
                 else{
                     float r1 = Float.parseFloat(w);
@@ -97,6 +119,15 @@ public class CaloriecounterFragment extends Fragment {
                     String cal = String.format("%.2f", ans);
 
                     Result.setText(cal + " Calories burnt");
+                    Resulthead.setText("Walking :");
+                    Walking.setColorFilter(0xFF2196F3);
+                    Cycling.setColorFilter(0x000);
+                    Swimming.setColorFilter(0x000);
+                    Running.setColorFilter(0x000);
+                    Aerobics.setColorFilter(0x000);
+                    Householdactivities.setColorFilter(0x000);
+                    Skipping.setColorFilter(0x000);
+                    Yoga.setColorFilter(0x000);
                 }
 
             }
@@ -108,7 +139,8 @@ public class CaloriecounterFragment extends Fragment {
                 String w = Weight.getText().toString();
                 String t = Time.getText().toString();
                 if(w.isEmpty() || t.isEmpty()){
-                    Result.setText("Please Enter Attributes.");
+                    Result.setText("Enter Attributes.");
+                    Resulthead.setText("Please");
                 }
                 else{
                     float r1 = Float.parseFloat(w);
@@ -118,6 +150,15 @@ public class CaloriecounterFragment extends Fragment {
                     String cal = String.format("%.2f", ans);
 
                     Result.setText(cal + " Calories burnt");
+                    Resulthead.setText("Running :");
+                    Running.setColorFilter(0xFF2196F3);
+                    Cycling.setColorFilter(0x000);
+                    Walking.setColorFilter(0x000);
+                    Swimming.setColorFilter(0x000);
+                    Aerobics.setColorFilter(0x000);
+                    Householdactivities.setColorFilter(0x000);
+                    Skipping.setColorFilter(0x000);
+                    Yoga.setColorFilter(0x000);
                 }
             }
         });
@@ -128,7 +169,8 @@ public class CaloriecounterFragment extends Fragment {
                 String w = Weight.getText().toString();
                 String t = Time.getText().toString();
                 if(w.isEmpty() || t.isEmpty()){
-                    Result.setText("Please Enter Attributes.");
+                    Result.setText("Enter Attributes.");
+                    Resulthead.setText("Please");
                 }
                 else{
                     float r1 = Float.parseFloat(w);
@@ -138,6 +180,15 @@ public class CaloriecounterFragment extends Fragment {
                     String cal = String.format("%.2f", ans);
 
                     Result.setText(cal + " Calories burnt");
+                    Resulthead.setText("Swimming :");
+                    Swimming.setColorFilter(0xFF2196F3);
+                    Cycling.setColorFilter(0x000);
+                    Walking.setColorFilter(0x000);
+                    Running.setColorFilter(0x000);
+                    Aerobics.setColorFilter(0x000);
+                    Householdactivities.setColorFilter(0x000);
+                    Skipping.setColorFilter(0x000);
+                    Yoga.setColorFilter(0x000);
                 }
 
             }
@@ -149,7 +200,8 @@ public class CaloriecounterFragment extends Fragment {
                 String w = Weight.getText().toString();
                 String t = Time.getText().toString();
                 if(w.isEmpty() || t.isEmpty()){
-                    Result.setText("Please Enter Attributes.");
+                    Result.setText("Enter Attributes.");
+                    Resulthead.setText("Please");
                 }
                 else{
                     float r1 = Float.parseFloat(w);
@@ -159,6 +211,15 @@ public class CaloriecounterFragment extends Fragment {
                     String cal = String.format("%.2f", ans);
 
                     Result.setText(cal + " Calories burnt");
+                    Resulthead.setText("Aerobics :");
+                    Aerobics.setColorFilter(0xFF2196F3);
+                    Cycling.setColorFilter(0x000);
+                    Walking.setColorFilter(0x000);
+                    Swimming.setColorFilter(0x000);
+                    Running.setColorFilter(0x000);
+                    Householdactivities.setColorFilter(0x000);
+                    Skipping.setColorFilter(0x000);
+                    Yoga.setColorFilter(0x000);
                 }
 
             }
@@ -170,7 +231,8 @@ public class CaloriecounterFragment extends Fragment {
                 String w = Weight.getText().toString();
                 String t = Time.getText().toString();
                 if(w.isEmpty() || t.isEmpty()){
-                    Result.setText("Please Enter Attributes.");
+                    Result.setText("Enter Attributes.");
+                    Resulthead.setText("Please");
                 }
                 else{
                     float r1 = Float.parseFloat(w);
@@ -180,6 +242,15 @@ public class CaloriecounterFragment extends Fragment {
                     String cal = String.format("%.2f", ans);
 
                     Result.setText(cal + " Calories burnt");
+                    Resulthead.setText("House hold activities :");
+                    Householdactivities.setColorFilter(0xFF2196F3);
+                    Cycling.setColorFilter(0x000);
+                    Walking.setColorFilter(0x000);
+                    Swimming.setColorFilter(0x000);
+                    Running.setColorFilter(0x000);
+                    Aerobics.setColorFilter(0x000);
+                    Skipping.setColorFilter(0x000);
+                    Yoga.setColorFilter(0x000);
                 }
 
             }
@@ -191,7 +262,8 @@ public class CaloriecounterFragment extends Fragment {
                 String w = Weight.getText().toString();
                 String t = Time.getText().toString();
                 if(w.isEmpty() || t.isEmpty()){
-                    Result.setText("Please Enter Attributes.");
+                    Result.setText("Enter Attributes.");
+                    Resulthead.setText("Please");
                 }
                 else{
                     float r1 = Float.parseFloat(w);
@@ -201,6 +273,15 @@ public class CaloriecounterFragment extends Fragment {
                     String cal = String.format("%.2f", ans);
 
                     Result.setText(cal + " Calories burnt");
+                    Resulthead.setText("Skipping :");
+                    Skipping.setColorFilter(0xFF2196F3);
+                    Cycling.setColorFilter(0x000);
+                    Walking.setColorFilter(0x000);
+                    Swimming.setColorFilter(0x000);
+                    Running.setColorFilter(0x000);
+                    Aerobics.setColorFilter(0x000);
+                    Householdactivities.setColorFilter(0x000);
+                    Yoga.setColorFilter(0x000);
                 }
 
             }
@@ -212,7 +293,8 @@ public class CaloriecounterFragment extends Fragment {
                 String w = Weight.getText().toString();
                 String t = Time.getText().toString();
                 if(w.isEmpty() || t.isEmpty()){
-                    Result.setText("Please Enter Attributes.");
+                    Result.setText("Enter Attributes.");
+                    Resulthead.setText("Please");
                 }
                 else{
                     float r1 = Float.parseFloat(w);
@@ -222,13 +304,19 @@ public class CaloriecounterFragment extends Fragment {
                     String cal = String.format("%.2f", ans);
 
                     Result.setText(cal + " Calories burnt");
+                    Resulthead.setText("Yoga :");
+                    Yoga.setColorFilter(0xFF2196F3);
+                    Cycling.setColorFilter(0x000);
+                    Walking.setColorFilter(0x000);
+                    Swimming.setColorFilter(0x000);
+                    Running.setColorFilter(0x000);
+                    Aerobics.setColorFilter(0x000);
+                    Householdactivities.setColorFilter(0x000);
+                    Skipping.setColorFilter(0x000);
                 }
 
             }
         });
-
-
-
 
         return root;
     }
