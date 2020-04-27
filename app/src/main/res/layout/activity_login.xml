@@ -89,9 +89,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="130dp"
-        android:text="New user? Sign Up"
+        android:text="@string/new_User_Login"
         android:textSize="16dp"
-
         />
 
 </RelativeLayout>

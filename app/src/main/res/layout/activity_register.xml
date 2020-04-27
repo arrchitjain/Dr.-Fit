@@ -117,7 +117,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="100dp"
         android:textSize="16dp"
-        android:text="Aldready have an account?"
+        android:text="@string/aldready_have_account"
         />
 
 </RelativeLayout>

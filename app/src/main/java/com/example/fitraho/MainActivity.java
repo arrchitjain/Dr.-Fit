@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
 
                         final ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressBar2);
-
+                        
                         progressBar.setVisibility(View.VISIBLE);
                         FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
                         firebaseUser.delete().addOnCompleteListener(new OnCompleteListener<Void>() {

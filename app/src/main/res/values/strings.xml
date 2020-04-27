@@ -4,4 +4,6 @@
     <string name="title_dashboard">Diet</string>
     <string name="title_notifications">FAQ</string>
     <string name="title_caloriecounter">Calorie counter</string>
+    <string name="new_User_Login"><u>New user? Sign Up</u></string>
+    <string name="aldready_have_account"><u>Aldready have an account?</u></string>
 </resources>
